@@ -1,12 +1,6 @@
-// console.log("Hello World");
-
-// const myName = "Boimah";
-// const h1 = document.querySelector(".heading-primary");
-
-// h1.textContent = myName;
-
 ///////////////////////////////////////////////////////////
 //Set curret year
+
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
@@ -40,6 +34,7 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       });
+
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
@@ -77,6 +72,7 @@ obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
+
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
@@ -96,7 +92,3 @@ function checkFlexGap() {
 checkFlexGap();
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
-
-/*
-
-*/
